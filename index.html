@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#073b3a">
+<meta name="description" content="Aqua Sentinel is a proposed solar-powered floating water monitoring and treatment concept designed to support cleaner water management.">
+<title>Aqua Sentinel | Smarter Water. Cleaner Future.</title>
+<style>
+:root{--deep:#073b3a;--teal:#087f78;--mint:#b8f3df;--aqua:#e8fbf5;--ink:#123b3a;--muted:#557573;--white:#fff;--line:#d7eee7;--sun:#ffd36e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#fbfffd;line-height:1.6}a{color:inherit} .wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(251,255,253,.9);backdrop-filter:blur(14px);border-bottom:1px solid #e5f2ed}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:850;letter-spacing:-.04em;font-size:1.18rem}.brand-mark{display:grid;place-items:center;width:40px;height:40px;border-radius:13px;background:var(--deep);color:var(--mint);font-size:1.35rem}.navlinks{display:flex;gap:26px;align-items:center}.navlinks a{text-decoration:none;font-size:.92rem;font-weight:650;color:#315c58}.navlinks a:hover{color:var(--teal)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;border:0;border-radius:999px;padding:13px 20px;font-weight:750;cursor:pointer;transition:transform .2s,box-shadow .2s}.nav-cta,.btn-primary{background:var(--deep);color:white;box-shadow:0 8px 18px #073b3a20}.nav-cta:hover,.btn:hover{transform:translateY(-2px)}.btn-secondary{background:white;color:var(--deep);border:1px solid #c8e6dc}
+.hero{padding:76px 0 66px;background:radial-gradient(ellipse at 80% 20%,#c9f5e4 0,transparent 35%),linear-gradient(135deg,#f5fffb,#e8fbf5 55%,#f9fffc);overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:48px}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--teal);background:#d9f8ec;border:1px solid #bdebd9;border-radius:999px;padding:7px 12px;font-size:.8rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase}.eyebrow span{width:7px;height:7px;background:#0b9e83;border-radius:50%}h1{font-size:clamp(2.8rem,5.7vw,5rem);line-height:1.02;letter-spacing:-.065em;margin:20px 0 22px;color:var(--deep)}h1 em{font-style:normal;color:var(--teal)}.hero p{max-width:540px;font-size:1.12rem;color:#486b67;margin:0 0 28px}.actions{display:flex;gap:12px;flex-wrap:wrap}.small-note{font-size:.82rem!important;color:#66847e!important;margin-top:18px!important}.hero-art{min-height:410px;position:relative;display:grid;place-items:center}.orb{position:absolute;width:360px;height:360px;border-radius:50%;background:linear-gradient(145deg,#c4f4e2,#e9fff7);box-shadow:inset 0 0 0 1px #fff,0 25px 70px #0a6c5c12}.sun{position:absolute;top:36px;right:55px;width:62px;height:62px;background:var(--sun);border-radius:50%;box-shadow:0 0 0 14px #ffdc8b35}.water{position:absolute;width:440px;height:125px;bottom:50px;border-radius:50%;background:linear-gradient(180deg,#65d7c0,#168b87);transform:rotate(-8deg);box-shadow:0 18px 0 #087f7820}.water:before,.water:after{content:"";position:absolute;border:2px solid #c5fff0;border-color:#c5fff0 transparent transparent transparent;border-radius:50%;width:85%;height:35px;left:7%;top:28px}.water:after{top:53px;left:18%;width:65%}.platform{position:absolute;bottom:142px;left:50%;transform:translateX(-50%) rotate(-8deg);width:260px;height:52px;background:linear-gradient(180deg,#fff,#d7eee7);border-radius:15px 15px 22px 22px;box-shadow:0 12px 0 #8cbdb1;display:flex;justify-content:center;gap:8px;padding:8px}.panel{width:68px;height:30px;border-radius:5px;background:repeating-linear-gradient(90deg,#145a69 0 2px,#267f8d 2px 17px);border:2px solid #a6d9db;transform:skewY(-7deg)}.tower{position:absolute;bottom:193px;left:50%;transform:translateX(-50%);width:82px;height:80px;background:#f9fffc;border:4px solid #b7dcd2;border-radius:12px 12px 5px 5px;box-shadow:inset 0 -12px #d4eee5}.tower:before{content:"";position:absolute;width:24px;height:15px;background:var(--sun);border-radius:4px;top:13px;left:25px}.tower:after{content:"";position:absolute;width:5px;height:38px;background:#b2d9ce;top:-42px;left:34px;border-radius:4px}.bubble{position:absolute;display:flex;align-items:center;gap:10px;background:#fff;padding:12px 15px;border-radius:15px;box-shadow:0 12px 30px #104b4020;font-size:.83rem;font-weight:800}.bubble b{display:grid;place-items:center;width:32px;height:32px;border-radius:10px;background:#dff9ee;color:#087f78;font-size:1.1rem}.bubble.one{top:76px;left:0}.bubble.two{right:-8px;bottom:96px}.bubble.three{bottom:18px;left:45px}
+.section{padding:82px 0}.section-head{max-width:680px;margin:0 auto 42px;text-align:center}.kicker{color:var(--teal);font-size:.8rem;font-weight:850;text-transform:uppercase;letter-spacing:.13em}.section h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.1;letter-spacing:-.05em;color:var(--deep);margin:10px 0 14px}.section-head p{color:var(--muted);margin:0;font-size:1.04rem}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{background:white;border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:0 12px 36px #073b3a06}.feature-icon{width:48px;height:48px;border-radius:15px;background:var(--aqua);display:grid;place-items:center;font-size:1.45rem}.feature h3{margin:18px 0 8px;color:var(--deep);font-size:1.13rem}.feature p{margin:0;color:var(--muted);font-size:.95rem}
+.how{background:var(--deep);color:white}.how .section-head h2{color:white}.how .section-head p{color:#b9d7d0}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{border:1px solid #ffffff24;background:#ffffff09;border-radius:20px;padding:24px}.step-num{color:var(--mint);font-weight:900;font-size:.85rem;letter-spacing:.12em}.step h3{margin:9px 0;color:white}.step p{margin:0;color:#b9d7d0;font-size:.94rem}
+.audience-grid{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center}.audience-card{border-radius:26px;background:linear-gradient(135deg,#dff9ee,#f5fffb);padding:34px;border:1px solid var(--line)}.audience-card h3{font-size:1.55rem;line-height:1.2;margin:0 0 16px;color:var(--deep)}.checklist{list-style:none;padding:0;margin:0;display:grid;gap:13px}.checklist li{display:flex;gap:10px;color:#466b65}.check{flex:0 0 24px;width:24px;height:24px;display:grid;place-items:center;border-radius:50%;background:#b8f3df;color:#075e53;font-weight:900}.audience-copy p{color:var(--muted)}
+.cta{padding:70px 0;background:linear-gradient(125deg,#d8f8eb,#f5fffb)}.cta-box{display:flex;justify-content:space-between;align-items:center;gap:28px}.cta h2{font-size:clamp(2rem,4vw,3rem);line-height:1.08;letter-spacing:-.05em;color:var(--deep);margin:0 0 12px}.cta p{margin:0;color:var(--muted);max-width:600px}.cta-actions{display:flex;gap:10px;flex-wrap:wrap;flex-shrink:0}
+footer{background:#052e2d;color:#c3dfd7;padding:28px 0}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer-brand{color:white;font-weight:850}.footer-links{display:flex;gap:18px}.footer-links a{color:#c3dfd7;text-decoration:none;font-size:.9rem}.disclaimer{font-size:.78rem;color:#94bdb3;margin:18px 0 0;max-width:850px}
+@media(max-width:800px){.navlinks{display:none}.hero{padding-top:48px}.hero-grid{grid-template-columns:1fr;gap:8px}.hero-art{min-height:350px;transform:scale(.9);margin:-5px -20px}.orb{width:300px;height:300px}.water{width:360px}.bubble.one{left:2%}.bubble.two{right:0}.features,.steps{grid-template-columns:1fr}.audience-grid{grid-template-columns:1fr}.cta-box{align-items:flex-start;flex-direction:column}.section{padding:64px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Aqua Sentinel home"><span class="brand-mark">≈</span><span>AQUA SENTINEL</span></a>
+    <nav class="navlinks" aria-label="Main navigation"><a href="#solution">Our solution</a><a href="#how">How it works</a><a href="#who">Who it's for</a></nav>
+    <a class="nav-cta" href="https://www.instagram.com/aqua_sentinel____/" target="_blank" rel="noopener">Connect with us ↗</a>
+  </div>
+</header>
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow"><span></span> A smarter approach to water care</div>
+      <h1>Smarter water.<br><em>Cleaner future.</em></h1>
+      <p>Aqua Sentinel is a proposed solar-powered floating system that brings water-quality monitoring and treatment concepts together to support more informed, sustainable water management.</p>
+      <div class="actions"><a class="btn btn-primary" href="#contact">Explore a pilot project <span>→</span></a><a class="btn btn-secondary" href="#solution">Discover the solution</a></div>
+      <p class="small-note">Designed with adaptability, renewable energy and water-quality insights in mind.</p>
+    </div>
+    <div class="hero-art" aria-label="Illustration of a solar-powered floating water monitoring platform">
+      <div class="orb"></div><div class="sun"></div><div class="water"></div>
+      <div class="platform"><div class="panel"></div><div class="panel"></div><div class="panel"></div></div><div class="tower"></div>
+      <div class="bubble one"><b>☀</b><span>Solar-powered<br>concept</span></div>
+      <div class="bubble two"><b>⌁</b><span>Water-quality<br>insights</span></div>
+      <div class="bubble three"><b>♻</b><span>Modular design</span></div>
+    </div>
+  </div>
+</section>
+<section class="section" id="solution">
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">The concept</div><h2>One floating platform.<br>Multiple ways to help.</h2><p>Water bodies have different needs. Aqua Sentinel is being designed as a modular concept that can be adapted and evaluated for different environments.</p></div>
+    <div class="features">
+      <article class="feature"><div class="feature-icon">☀️</div><h3>Solar energy</h3><p>A renewable-energy approach intended to support system operation and reduce reliance on grid power where suitable.</p></article>
+      <article class="feature"><div class="feature-icon">💧</div><h3>Multi-stage treatment</h3><p>A proposed combination of screening, filtration and UV treatment modules, selected according to the water and intended use.</p></article>
+      <article class="feature"><div class="feature-icon">📡</div><h3>Water-quality monitoring</h3><p>Sensor and dashboard concepts can help operators observe selected water-quality indicators and follow changes over time.</p></article>
+      <article class="feature"><div class="feature-icon">🧩</div><h3>Modular by design</h3><p>A flexible concept intended for assessment in ponds, lakes, reservoirs and other suitable water bodies.</p></article>
+      <article class="feature"><div class="feature-icon">🌱</div><h3>Environmental focus</h3><p>Built around the goal of supporting better water stewardship and more informed environmental decisions.</p></article>
+      <article class="feature"><div class="feature-icon">🤝</div><h3>Built for collaboration</h3><p>We want to work with municipalities, site operators, researchers and environmental groups to validate real-world needs.</p></article>
+    </div>
+  </div>
+</section>
+<section class="section how" id="how">
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">From concept to impact</div><h2>How Aqua Sentinel is intended to work</h2><p>Each deployment should be tailored to the water body, local conditions and the intended outcome.</p></div>
+    <div class="steps">
+      <article class="step"><div class="step-num">STEP 01</div><h3>Assess the water body</h3><p>Understand site conditions, water-quality concerns, operating requirements and the right indicators to monitor.</p></article>
+      <article class="step"><div class="step-num">STEP 02</div><h3>Configure the modules</h3><p>Explore suitable solar, sensor, intake and treatment modules with technical partners and site stakeholders.</p></article>
+      <article class="step"><div class="step-num">STEP 03</div><h3>Test and learn</h3><p>Run a supervised pilot, measure results and refine the design before considering broader deployment.</p></article>
+    </div>
+  </div>
+</section>
+<section class="section" id="who">
+  <div class="wrap audience-grid">
+    <div class="audience-copy"><div class="kicker">Who we want to work with</div><h2>Let's solve water challenges together.</h2><p>Aqua Sentinel is looking to connect with organisations that manage water bodies or work on water quality, sustainability and environmental innovation.</p><p>We welcome conversations with municipal teams, industries, campuses, NGOs, researchers and potential pilot partners.</p><a class="btn btn-primary" href="https://www.instagram.com/aqua_sentinel____/" target="_blank" rel="noopener">Message us on Instagram ↗</a></div>
+    <div class="audience-card"><h3>Potential pilot conversations</h3><ul class="checklist"><li><span class="check">✓</span><span>Identify a suitable pond, lake or reservoir</span></li><li><span class="check">✓</span><span>Discuss local water-quality priorities</span></li><li><span class="check">✓</span><span>Define monitoring and evaluation goals</span></li><li><span class="check">✓</span><span>Plan a safe, measurable pilot with experts</span></li></ul></div>
+  </div>
+</section>
+<section class="cta" id="contact">
+  <div class="wrap cta-box"><div><h2>Interested in a cleaner-water future?</h2><p>Connect with Aqua Sentinel to discuss the concept, share a water-management challenge or explore a potential pilot partnership.</p></div><div class="cta-actions"><a class="btn btn-primary" href="https://www.instagram.com/aqua_sentinel____/" target="_blank" rel="noopener">Contact Aqua Sentinel ↗</a><a class="btn btn-secondary" href="#top">Back to top ↑</a></div></div>
+</section>
+</main>
+<footer><div class="wrap"><div class="footer-row"><div class="footer-brand">≈ AQUA SENTINEL</div><div class="footer-links"><a href="#solution">Solution</a><a href="#how">How it works</a><a href="https://www.instagram.com/aqua_sentinel____/" target="_blank" rel="noopener">Instagram ↗</a></div><span>© <span id="year">2026</span> Aqua Sentinel</span></div><p class="disclaimer">Aqua Sentinel is a developing concept. Features and outcomes described here are proposed and require engineering validation and field testing. Treatment performance depends on water conditions and appropriate testing; this page does not claim the system produces potable water.</p></div></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
